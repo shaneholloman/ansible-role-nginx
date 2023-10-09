@@ -44,8 +44,7 @@ jobs:
         distro:
           - rockylinux8
           - ubuntu2004
-          - ubuntu1804
-          - debian10
+          - debian11
 
     steps:
       - name: Check out the codebase.
