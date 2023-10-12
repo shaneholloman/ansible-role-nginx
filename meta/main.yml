@@ -5,7 +5,7 @@ galaxy_info:
   role_name: nginx
   author: shaneholloman
   description: Nginx installation for Linux, FreeBSD and OpenBSD.
-  company: "Shane Holloman"
+  company: "shaneholloman"
   license: "license (BSD, MIT)"
   min_ansible_version: "2.10"
   platforms:
