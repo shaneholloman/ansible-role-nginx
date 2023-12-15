@@ -6,7 +6,7 @@
 # See: https://github.com/ansible/galaxy/issues/46
 
 name: Remove
-'on':
+on:
   workflow_dispatch:
 
 defaults:
