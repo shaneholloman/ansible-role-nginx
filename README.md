@@ -34,7 +34,7 @@ A list of vhost definitions (server blocks) for Nginx virtual hosts. Each entry 
         access_log: ""
         error_log: ""
         state: "present"
-        template: "{{ nginx_vhost_template }}"
+        ansible.builtin.template: "{{ nginx_vhost_template }}"
         filename: "example.com.conf"
         extra_parameters: |
           location ~ \.php$ {
@@ -176,11 +176,11 @@ nginx_vhosts:
     server_name: "site1.example.com"
     root: "/var/www/site1.example.com"
     index: "index.php index.html index.htm"
-    template: "{{ playbook_dir }}/templates/site1.example.com.vhost.j2"
+    ansible.builtin.template: "{{ playbook_dir }}/templates/site1.example.com.vhost.j2"
   - server_name: "site2.example.com"
     root: "/var/www/site2.example.com"
     index: "index.php index.html index.htm"
-    template: "{{ playbook_dir }}/templates/site2.example.com.vhost.j2"
+    ansible.builtin.template: "{{ playbook_dir }}/templates/site2.example.com.vhost.j2"
 ```
 
 You can either copy and modify the provided template, or extend it with [Jinja2 template inheritance](http://jinja.pocoo.org/docs/2.9/templates/#template-inheritance) and override the specific template block you need to change.

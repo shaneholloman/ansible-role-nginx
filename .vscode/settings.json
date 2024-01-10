@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "nopush"
-    ]
+    ],
+    "ansible.python.interpreterPath": "/bin/python3"
 }
